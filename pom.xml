@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.nate.elemental</groupId>
-    <artifactId>Elemental-Factions</artifactId>
-    <version>4.1.7</version>
+    <artifactId>Elemental-Fnvoys</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -28,25 +28,13 @@
             <version>1.17-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-             <groupId>com.h2database</groupId>
-             <artifactId>h2</artifactId>
-             <version>2.2.220</version>
-        </dependency>
-        <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>VaultAPI</artifactId>
-            <version>1.7</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/VaultAPI.jar</systemPath>
-        </dependency>
     </dependencies>
 
     <build>
         <sourceDirectory>src</sourceDirectory>
         <resources>
             <resource>
-                <directory>C:\Enterprise\ElementalLegacy\Plugins\ElementalFactions</directory>
+                <directory>C:\Enterprise\ElementalLegacy\Plugins\ElementalEnvoys</directory>
                 <includes>
                     <include>*.yml</include>
                 </includes>
