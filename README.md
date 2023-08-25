@@ -11,7 +11,7 @@ The **Elemental Envoys** plugin adds an exciting gameplay element to your Minecr
 
 ## Installation
 
-1. Download the latest release of the Elemental Envoys plugin from the [Releases](https://github.com/yourusername/elemental-envoys/releases) section.
+1. Download the latest release of the Elemental Envoys plugin from the [Releases](https://github.com/NatesHonor/ElementalEnvoys/releases) section.
 2. Place the downloaded `.jar` file in your server's `plugins` folder.
 3. Restart your Minecraft server to enable the plugin.
 
