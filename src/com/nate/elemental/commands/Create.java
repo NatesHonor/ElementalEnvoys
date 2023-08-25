@@ -8,17 +8,16 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Arrays;
 
-public class Create implements CommandExecutor {
-
-    private final Envoys plugin;
+public class Create implements CommandExecutor, Listener {
 
     public Create() {
-        this.plugin = Envoys.getInstance();
+        Envoys.getInstance();
     }
 
     @Override
@@ -29,10 +28,6 @@ public class Create implements CommandExecutor {
         }
 
         Player player = (Player) sender;
-        if (args.length != 1 || !args[0].equalsIgnoreCase("axe")) {
-            player.sendMessage(ChatColor.RED + "Usage: /create axe");
-            return true;
-        }
 
         ItemStack axe = createUniqueAxe();
         player.getInventory().addItem(axe);

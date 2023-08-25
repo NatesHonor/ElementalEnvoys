@@ -8,6 +8,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.nate.elemental.commands.Create;
+import com.nate.elemental.events.AxeInteractListener;
 
 public class Envoys extends JavaPlugin implements Listener, CommandExecutor {
     private static Envoys instance;
@@ -21,7 +22,8 @@ public class Envoys extends JavaPlugin implements Listener, CommandExecutor {
     public void onEnable() {
         instance = this;
         getCommand("envoy").setExecutor(this);
-
+        getServer().getPluginManager().registerEvents(new AxeInteractListener(this), this);
+        getServer().getPluginManager().registerEvents(new Create(), this);
     }
 
     @Override
@@ -34,7 +36,7 @@ public class Envoys extends JavaPlugin implements Listener, CommandExecutor {
         } else if (args.length >= 1) {
             String subCommand = args[0].toLowerCase();
             switch (subCommand) {
-                case "invite":
+                case "create":
                     Create create = new Create();
                     create.onCommand(sender, command, label, args);
                     break;
