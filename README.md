@@ -34,7 +34,7 @@ This plugin is released under the [MIT License](LICENSE).
 
 ## Support
 
-If you encounter any issues or have questions about using the Elemental Envoys plugin, please visit our [Issue Tracker](https://github.com/yourusername/elemental-envoys/issues) on GitHub.
+If you encounter any issues or have questions about using the Elemental Envoys plugin, please visit our [Issue Tracker](https://github.com/NatesHonor/ElementalEnvoys/issues) on GitHub.
 
 ## Acknowledgements
 
