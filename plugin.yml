@@ -1,0 +1,11 @@
+name: ElementalFactions
+version: 4.1.6
+main: com.nate.elemental.Envoys
+author: NatesHonor
+website: https://inate.xyz
+description: A Factions plugin Designed for Elemental Legacy
+api-version: 1.17
+commands:
+  envoy:
+    description: Default envoy command
+    usage: /f help
